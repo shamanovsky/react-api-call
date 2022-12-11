@@ -5,7 +5,7 @@ const Books = (props) => {
   return (
     <div
       style={{
-        // backgroundColor: "#e6fe00",
+        // backgroundColor: "#5c6bc0",
         color: "#5c6bc0",
         padding: "20px 10px"
       }}
@@ -15,7 +15,7 @@ const Books = (props) => {
           <p
             key={book.id}
             onClick={() => {
-              props.setSelectedBook(book.id);
+              updateBook(book.id);
             }}
             style={{ cursor: "pointer" }}
             role="button"
